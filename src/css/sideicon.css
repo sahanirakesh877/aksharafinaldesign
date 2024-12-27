@@ -1,0 +1,84 @@
+/* sideicon design start */
+.sideicon {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+  
+  .iconBox {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(10, 120, 83);
+    transition: all 0.3s ease;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.8);
+  }
+  
+  .iconBox span {
+    position: absolute;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    border-radius: 5px;
+    top: 55%;
+    right: 150%;
+    transform: translateX(10px) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+  
+  .iconBox:hover span {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(20px) translateY(-50%);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .sideicon {
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .iconBox {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .iconBox span {
+      font-size: 12px;
+      padding: 5px 15px;
+      right: 130%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sideicon {
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .iconBox {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .iconBox span {
+      font-size: 11px;
+      padding: 4px 10px;
+      right: 120%;
+    }
+  }
+  /* sideicon design end */
+  

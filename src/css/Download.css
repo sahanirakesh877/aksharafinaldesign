@@ -1,0 +1,78 @@
+/* Container styles */
+
+  
+  /* Page Title */
+  .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+
+  
+  /* Files List */
+  .files-list {
+    background-color: #aecef1;  }
+  
+  .files-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .files-list li {
+    border-bottom: 1px solid #e2e6ea;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .files-list .file-info {
+    flex: 1;
+  }
+  
+  .files-list .file-name {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .files-list .file-name:hover {
+    text-decoration: underline;
+  }
+  
+  .files-list .publication-date {
+    display: block;
+    font-size: 0.775rem;
+    color: #6c757d;
+  }
+
+
+
+
+
+  .mb-btns {
+    background-color: #02547A; 
+    color: white;
+    border: none; 
+    border-radius: 50px; 
+    padding: 4px 15px; 
+    font-size: 0.9rem; 
+    font-weight:bold;
+    text-transform: uppercase; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+  }
+
+  .mb-btns:hover{
+    background-color: #509ec3; 
+    color: white;
+
+  }
+  
+
+  
+ 
+  
+ 
+  

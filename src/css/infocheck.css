@@ -1,0 +1,37 @@
+/* .infograph-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  .infograph-card {
+    margin: 1rem;
+    flex: 1 0 21%;
+    max-width: 21%;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .infograph-card:hover {
+    transform: scale(1.05);
+  }
+  .infograph-card .card-body {
+    padding: 1.5rem;
+  }
+  .infograph-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .card-1 { background-color: #ff6f61; color: #fff; }
+  .card-2 { background-color: #6b5b95; color: #fff; }
+  .card-3 { background-color: #88b04b; color: #fff; }
+  .card-4 { background-color: #f7cac9; color: #fff; }
+  .card-5 { background-color: #92a8d1; color: #fff; }
+  .card-6 { background-color: #ffcc5c; color: #fff; }
+  .card-7 { background-color: #955251; color: #fff; }
+  .card-8 { background-color: #b565a7; color: #fff; }
+  .card-9 { background-color: #009688; color: #fff; }
+  .card-10 { background-color: #34495e; color: #fff; } */

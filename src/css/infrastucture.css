@@ -1,0 +1,65 @@
+.infra-icon {
+    font-size: 50px;
+}
+
+.card-texts {
+    text-align: justify;
+    font-size: 14px !important;
+    color: rgb(105, 103, 103);
+}
+
+.infra-card {
+    background: linear-gradient(to top, #edf7ff, #ffffff);
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    transform: scale(1); /* Initial scale */
+}
+
+.infra-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #ffffff, #edf7ff);
+}
+
+.infra-icon {
+    transition: transform 0.5s ease;
+}
+
+.infra-card:hover .infra-icon {
+    transform: rotate(360deg);
+}
+
+
+
+.infra-details-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #0c61bb; /* Customize color */
+    text-shadow: 0.2px 0.5px 1px rgb(0, 0, 0);
+    border-bottom: 1px solid red;
+}
+
+.infra-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.infra-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
