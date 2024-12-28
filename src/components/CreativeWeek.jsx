@@ -70,7 +70,7 @@ const CreativeWeek = () => {
         />
       </div>
       <div className="card-body p-2 m-0  ">
-      <h5 className="text-center text-primary fw-bold mb-2" style={{ textShadow: '1px 1px 1px #000', letterSpacing: '1px' }}>
+      <h5 className="text-center  fw-bold mb-2" style={{  letterSpacing: '1px' }}>
       {week.title}</h5>
       </div>
     </div>
@@ -219,7 +219,7 @@ const CreativeWeek = () => {
                     style={{
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      objectFit: "contain",
                     }}
                   />
                 )}
