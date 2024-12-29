@@ -1,17 +1,12 @@
-import longProject1 from "../assets/longTermProject/GP4A8117.jpg";
-import longProject2 from "../assets/longTermProject/GP4A8131.jpg";
+import sports from "/sport.jpg";
 
 
 const creativeweek = [
   {
     id: 1,
-    title: " Expressions of Excellence",
-    image: longProject2,
+    title: " Aksharaa Sports Week",
+    image: sports,
   },
-  {
-    id: 2,
-    title: " The Art and Mind Gallery",
-    image: longProject1,
-  },
+ 
 ];
 export default creativeweek;
