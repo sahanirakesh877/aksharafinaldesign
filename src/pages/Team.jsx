@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import "../css/Team.css";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import team1 from "../../src/assets/Teammember/GP4A7953 copy.jpg";
+ import team1 from "../../src/assets/Teammember/GP4A7953 copy.jpg";
 import team2 from "../../src/assets/Teammember/GP4A8352.jpg";
 import team3 from "../../src/assets/Teammember/GP4A8358.jpg";
 
-import sabinamam from "/sabinamam2.jpg";
+import sabinamam from "/sabinamam.jpg";
 
 const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
   <div className="col-md-3 col-sm-6  ">
@@ -32,7 +32,7 @@ const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
 );
 
 const TeamSection = ({ title, imgSrc, members }) => (
-  <div className=" mb-2">
+  <div className=" mb-2 parent-container">
     
     {imgSrc && (
       <div className="row align-items-center">
@@ -41,7 +41,7 @@ const TeamSection = ({ title, imgSrc, members }) => (
         </div>
       </div>
     )}
-    <h3 className="team-head text-center  border-bottom-title w-100"  style={{ marginTop: "1rem" }}>
+    <h3 className="team-head text-center "  style={{ marginTop: "1rem" }}>
       {title}
     </h3>
 
@@ -66,10 +66,10 @@ const teamSections = [
     imgSrc: team2,
    
   },
-  {
-    title: "Team Middle School",
-    imgSrc: team1,
-  },
+  // {
+  //   title: "Team Middle School",
+  //   imgSrc: team1,
+  // },
   {
     title: "Team Kindergarten School",
     imgSrc: team1,
@@ -83,7 +83,7 @@ const teamSections = [
     members: [
       {
         imgSrc:
-          "https://aksharaaschool.edu.np/storage/members/January2023/jx5H9QzLfYRjMzDTjetA.jpg",
+          "/Rashmila Thapa.jpg",
         name: "Rashmila Thapa",
         position: "Accountant",
         socialLinks: [
@@ -96,7 +96,7 @@ const teamSections = [
       },
       {
         imgSrc:
-          "https://aksharaaschool.edu.np/storage/members/October2019/lNwTEleOknIKHophNWjE.png",
+          "/Kaushila Pokhrel.jpg",
         name: "Kaushila Pokharel",
         position: "Financial Manager",
         socialLinks: [
@@ -122,7 +122,7 @@ const teamSections = [
       },
       {
         imgSrc:
-          "https://aksharaaschool.edu.np/storage/members/February2022/GybhzCk3WloVI8Eqe3UO.JPG",
+          "/Bimal Bhattarai.jpeg",
         name: "Bimal Bhattarai",
         position: "Admin cum Transportation Incharge",
         socialLinks: [
