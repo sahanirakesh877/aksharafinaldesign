@@ -21,7 +21,7 @@ import playarea1 from "../../src/assets/infrastructure/playarea/GP4A8192.jpg";
 import playarea2 from "../../src/assets/infrastructure/playarea/aksharaa school5676 Final.jpg";
 import playarea3 from "../../src/assets/infrastructure/playarea/GP4A8243.jpg";
 
-import infirmary1 from "../../src/assets/infrastructure/infirmary/aksharaa school5517-Final.jpg";
+// import infirmary1 from "../../src/assets/infrastructure/infirmary/aksharaa school5517-Final.jpg";
 import infirmary2 from "../../src/assets/infrastructure/infirmary/aksharaa school5652 Final.jpg";
 import infirmary3 from "../../src/assets/infrastructure/infirmary/infirmary.jpg";
 
@@ -90,7 +90,7 @@ const infrastructureData = [
     title: "Infirmary",
     iconClass: "fas fa-stethoscope text-danger",
     description: `Our Infirmary is staffed with a dedicated full-time nurse who provides immediate care for minor health issues and emergencies. The infirmary is equipped to handle a range of medical needs, from routine check-ups to urgent situations. Our comprehensive health services include preventive care, health awareness, and coordination with local medical professionals. Our objective is to provide students with timely and effective care, as we prioritize their health and well-being. We believe that this focus allows students to concentrate on their education without the distraction of health-related issues.`,
-    images: [infirmary1, infirmary2, infirmary3],
+    images: [infirmary2, infirmary3],
   },
 ];
 
