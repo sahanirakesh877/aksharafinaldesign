@@ -524,3 +524,10 @@ a.icon-link:hover {
 .about-icon3 {
   animation-delay: 3s;
 }
+
+.mission-p {
+  text-align: left;
+  padding:5px 15px;
+  font-size: 0.96rem;
+  margin: 0;
+}

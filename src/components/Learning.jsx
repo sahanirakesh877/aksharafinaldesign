@@ -61,7 +61,7 @@ const Learning = () => {
                   <i className="fa-solid fa-xmark"></i>
                 </button>
                 <h3 className="border-bottom-title w-100 text-center ">
-                  Senior School (Class 8-10)
+                  Senior School (Grade 8-10)
                 </h3>
                 <p className="lrpa-text px-2">
                 Our Senior School program combines rigorous academics with value-based education, ensuring students are well-prepared for higher education and real-life challenges. Counseling and support services are available to guide students through their academic and personal decisions. Our graduates leave with a strong academic foundation, leadership qualities, critical thinking skills, problem-solving skills and a deep sense of social responsibility..

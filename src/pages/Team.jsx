@@ -109,7 +109,7 @@ const teamSections = [
       },
       {
         imgSrc:
-          "https://aksharaaschool.edu.np/storage/members/April2022/YfzsZUdflAn4ZS657EfW.jpg",
+          "/ramsir.jpg",
         name: "Ram Kumar Adhikari",
         position: "IT Incharge",
         socialLinks: [
@@ -135,7 +135,7 @@ const teamSections = [
       },
       {
         imgSrc:
-          "https://aksharaaschool.edu.np/storage/members/February2022/PTp8lyBO7oCeIyYgJ14A.jpg",
+          "/sir.jpg",
         name: "Sabin Nepal",
         position: "Operation Incharge",
         socialLinks: [

@@ -67,7 +67,7 @@ const ChairmanMsg = () => {
             <div className="col-lg-4">
               <div className="fancy-border">
                 <img
-                  src="https://www.aksharaaschool.edu.np/public/assets/images/ChairmanSir.jpg"
+                  src="/ChairmanSir.jpg"
                   alt="Chairman Image"
                   className="img-fluid rounded  chairman-image"
                 />
@@ -84,7 +84,7 @@ const ChairmanMsg = () => {
             <div className="col-lg-4">
               <div className="fancy-border">
                 <img
-                  src="	https://www.aksharaaschool.edu.np/public/assets/images/principal.jpg"
+                  src="/principal.jpg"
                   alt="Chairman Image"
                   className="img-fluid rounded  chairman-image"
                 />
