@@ -1,41 +1,55 @@
 import axios from "axios";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-
   const [loading, setLoading] = useState(false);
-  const formRef = useRef();
-
-  const [res, setRes] = useState(null);
 
   async function submitContactForm(e) {
     e.preventDefault();
-    setRes(null);
-    setLoading(true); // Set loading to true before making the request
-    console.log(`${import.meta.env.VITE_SERVERAPI}/api/v1/contact`);
+    setLoading(true);
+       // EmailJS configuration
+       const emailParams = {
+        from_name: name,
+        from_email: email,
+        phone: phone,
+        message: message,
+      }; 
+
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_SERVERAPI}/api/v1/contact`,
+        `${import.meta.env.VITE_SERVERAPI}/api/contact`,
         { name, email, phone, message }
       );
-      setRes(response.data);
-      if (response.data.success) {
-        formRef.current.reset();
-        // Optionally reset the state as well
+
+      if (response.data) {
+         // Send email using EmailJS
+         await emailjs.send(
+          "service_730az5a", // Replace with your EmailJS Service ID
+          "template_xxk6ii9", // Replace with your EmailJS Template ID
+          emailParams,
+          "XTNbaC9I1T_58dhPA" // Replace with your EmailJS User ID
+        );
+        // Alert and clear form if submission is successful
+        alert("Your message has been sent successfully!");
         setName("");
         setEmail("");
         setPhone("");
         setMessage("");
+      } else {
+        // Show alert if submission fails
+        alert("Something went wrong. Please try again later.");
       }
     } catch (err) {
       console.error(err);
       alert("Something went wrong with the contact form");
     } finally {
-      setLoading(false); // Ensure loading is set to false after the request is complete
+      setLoading(false); // Reset loading state
     }
   }
 
@@ -44,7 +58,8 @@ const Contact = () => {
       <div className="demo">
         <div className="container py-5">
           <h2 className="border-bottom-title justify-content-center mb-5 head-color d-flex align-items-start">
-            <span className="addcolor">Contact</span> Us
+            <span className="addcolor">Contact</span>{" "}
+            <span className="ms-2">Us</span>
           </h2>
           <div className="row d-flex align-items-center justify-content-start">
             <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-md-center align-items-center shadow-sm bg-light py-2 mb-2">
@@ -78,7 +93,7 @@ const Contact = () => {
 
           <div className="row d-flex align-items-start">
             <div className="col-lg-6 col-md-12 mb-2 contact-bg">
-              <form onSubmit={submitContactForm} ref={formRef}>
+              <form onSubmit={submitContactForm}>
                 <div className="form-group pb-2">
                   <label htmlFor="name" className="pb-1 text-dark">
                     Name:
@@ -126,25 +141,16 @@ const Contact = () => {
                     className="form-control rounded-1 border-0 shadow-none"
                     id="message"
                     style={{ resize: "none" }}
-                    rows="5"
+                    rows="6"
                     placeholder="Your Message"
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                   ></textarea>
                 </div>
-                <div className="messageHeight">
-                  {res ? (
-                    res.success ? (
-                      <p className="text-success">{res.message}</p>
-                    ) : (
-                      <p className="text-danger">*** {res.message}</p>
-                    )
-                  ) : null}
-                </div>
 
                 <button
                   type="submit"
-                  className={`button-21 w-100 my-3 ${loading ? "pointer" : ""}`}
+                  className={`button-21 my-3 w-100 ${loading ? "pointer" : ""}`}
                   disabled={loading}
                 >
                   {loading ? "Submitting..." : "Submit"}
@@ -155,7 +161,7 @@ const Contact = () => {
             <div className="col-lg-6 col-md-12  d-flex flex-column">
               <div
                 className="map-container  flex-grow-1"
-                style={{ position: "relative", paddingBottom: "91%" }}
+                style={{ position: "relative", paddingBottom: "88.5%" }}
               >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d56528.98843456104!2d85.29982577525458!3d27.684485455816603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39eb1a3058f08937%3A0x5e58e8a5ed6fa73b!2sM9X9%2B5C5%20Aksharaa%20School%2C%20Kageshwori%20Manohara%2044600!3m2!1d27.6973403!2d85.3670331!5e0!3m2!1sen!2snp!4v1715844547576!5m2!1sen!2snp"

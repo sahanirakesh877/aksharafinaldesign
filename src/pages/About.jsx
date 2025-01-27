@@ -52,7 +52,7 @@ const PhilosophySection = memo(({ navigate }) => (
           </h2>
         </div>
       </div>
-      <div className="row d-flex align-items-start mt-4">
+      <div className="row d-flex align-items-center mt-4 ">
         <div className="col-lg-6 col-md-12 mb-4">
           <p className="textcenter">
             Aksharaa School adopts a student-centered, constructivist
@@ -77,13 +77,16 @@ const PhilosophySection = memo(({ navigate }) => (
           </button>
         </div>
         <div className="col-lg-6 col-md-12">
-          <video width="100%" height="auto" controls className="textcenter">
-            <source
-              src="https://www.aksharaaschool.edu.np/assets/aksharaa-space.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            width="100%"
+            height="400px"
+            src="https://www.youtube.com/embed/nvz3GgY4Nts?autoplay=1&mute=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+            className="textcenter"
+          ></iframe>
         </div>
       </div>
     </div>

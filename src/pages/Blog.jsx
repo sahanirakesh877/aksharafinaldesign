@@ -225,7 +225,6 @@ const Blog = () => {
       event: [
         "1st:Maghe Sankranti",
         "7st:School Reopens",
-
         "16th:Rastriya Sahid Diwas",
         "17th: Sonam Lhosar",
         "21st: Saraswati Puja",
@@ -233,6 +232,8 @@ const Blog = () => {
         "2nd-6th & 20th:CPD"
       ],
     },
+
+    
     {
       date: "Falgun 2081 (Feb - Mar 2025)",
       event: ["7st: Prajatantra Diwas", 
