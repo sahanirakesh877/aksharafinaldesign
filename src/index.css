@@ -14,8 +14,6 @@
   }
 }
 
-
-
 .form-head {
   width: fit-content;
   background-color: transparent;
@@ -525,9 +523,12 @@ a.icon-link:hover {
   animation-delay: 3s;
 }
 
+
+
 .mission-p {
-  text-align: left;
-  padding:5px 15px;
+  text-align: center;
+  padding: 5px 15px;
   font-size: 0.96rem;
-  margin: 0;
+  margin: 0 auto;
+  line-height: 1.2;
 }

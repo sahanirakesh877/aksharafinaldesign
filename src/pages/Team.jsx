@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import team1 from "../../src/assets/Teammember/GP4A7953 copy.jpg";
 import team3 from "../../src/assets/Teammember/GP4A8358.jpg";
 import executive from "../../src/assets/Team/Executive Team.jpg";
-import admin from "../../src/assets/Team/Administrator Team.jpg";
+// import admin from "../../src/assets/Team/Administrator Team.jpg";
  import high from '../../src/assets/Team/High School Team.jpg'
  import middle from '../../src/assets/Team/Middle school Team.jpg'
 
@@ -21,6 +21,8 @@ import samikksha from "../../src/assets/Team/SamiKshya Lawati Front Desk Officer
 import kaushila from "../../src/assets/Team/Kaushila Pokharel Financial Manager.jpg";
 import ishwori from "../../src/assets/Team/Ishwori Dulal librarian.jpg";
 import manika from "../../src/assets/Team/Manika Shrestha Front Desk Officer.jpg";
+import sanchita from '../../src/assets/Team/Sanchita Adhikari.jpg'
+import Rajan from '../../src/assets/Team/Rajan Dahal.jpg'
 
 const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
   <div className="col-md-3 col-sm-6  ">
@@ -70,32 +72,33 @@ const TeamSection = ({ title, imgSrc, members }) => (
 // Data for team sections
 const teamSections = [
   {
-    title: "Our Executive Team",
+    title: " Executive ",
     imgSrc: executive,
   },
-  {
-    title: "Our Administration Team",
-    imgSrc: admin,
-  },
+  // {
+  //   title: " Administration Team",
+  //   imgSrc: admin,
+  // },
 
   {
-    title: "Team High School",
+    title: " High School",
     imgSrc: high,
   },
   {
-    title: "Team Middle School",
+    title: " Middle School",
     imgSrc: middle,
   },
   {
-    title: "Team Kindergarten School",
-    imgSrc: team1,
-  },
-  {
-    title: "Team Elementary School",
+    title: " Elementary School",
     imgSrc: team3,
   },
   {
-    title: "Administration & Operations",
+    title: " Kindergarten School",
+    imgSrc: team1,
+  },
+ 
+  {
+    title: "Administrative & Operation",
     members: [
       {
         imgSrc: kaushila,
@@ -124,7 +127,7 @@ const teamSections = [
       {
         imgSrc: rashmila,
         name: "Rashmila Thapa",
-        position: "Account",
+        position: "Accountant",
         socialLinks: [
           { href: "#", icon: "facebook" },
           { href: "#", icon: "instagram" },
@@ -161,6 +164,18 @@ const teamSections = [
         imgSrc: sabin,
         name: "Sabin Nepal",
         position: "Operation Incharge",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc: sanchita,
+        name: "Sanchita Adhikari",
+        position: "Executive Officer & Parent Coordinator",
         socialLinks: [
           { href: "#", icon: "facebook" },
           { href: "#", icon: "instagram" },
@@ -222,6 +237,18 @@ const teamSections = [
         imgSrc: ishwori,
         name: "Ishwori Dulal",
         position: "Librarian",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc: Rajan,
+        name: "Rajan Dahal",
+        position: "Store Incharge ",
         socialLinks: [
           { href: "#", icon: "facebook" },
           { href: "#", icon: "instagram" },

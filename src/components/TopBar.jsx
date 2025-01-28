@@ -7,7 +7,7 @@ const TopBar = () => {
       <div className="container mx-auto d-none d-lg-block ">
         <div className="row d-flex  justify-content-between  align-items-center  ">
           <div className="col-md-3 ">
-            <a href="#" className="text-decoration-none ">
+            <a href="/" className="text-decoration-none ">
               <img
                 src={Mainlogo}
                 alt="Akshara School"
